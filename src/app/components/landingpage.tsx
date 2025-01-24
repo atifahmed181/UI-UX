@@ -1,12 +1,12 @@
 import React from 'react'
-import MainImage from '../../../public/assets/main image.png'
-import Sideline from '../../../public/assets/sideline.png'
-import food1 from '../../../public/assets/1.png'
-import food2 from '../../../public/assets/2.png'
-import food3 from '../../../public/assets/3.png'
-import foodItems from '../../../public/assets/food items.png'
-import IconBox from '../../../public/assets/Icon Box.png'
-import OpacityImage from '../../../public/assets/opacImage.png'
+const MainImage = '/assets/main image.png';
+const Sideline = '/assets/sideline.png';
+const food1 = '/assets/1.png';
+const food2 = '/assets/2.png';
+const food3 = '/assets/3.png';
+const foodItems = '/assets/food items.png';
+const IconBox = '/assets/Icon Box.png';
+const OpacityImage = '/assets/opacImage.png';
 import Image from 'next/image'
 const LandingImage = () => {
   return (
