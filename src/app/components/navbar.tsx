@@ -2,32 +2,32 @@ import React from 'react'
 import Image from 'next/image'
 import logo from '../../../public/assets/Foodtuck.png'
 import searchIcon from '../../../public/assets/searchIcon.png'
+
 const Navbar = () => {
+  const navItems = ['Home', 'Menu', 'Blog', 'Pages', 'About', 'Shop', 'Contact'];
+
   return (
     <div>
       <header className="text-gray-300 body-font">
-      <a className="mx-auto pt-5 flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-gray-900 lg:items-center lg:justify-center mb-4 md:mb-0">
-      <Image src={logo} alt='Foodtuck' width={90}/>
-    </a>
-    <div className="container mx-auto flex flex-wrap flex-col md:flex-row items-start">
-      <nav className="flex lg:w-2/5 flex-wrap p-1 items-start text-sm md-20 ml-40">
-      <a className="mr-5 hover:text-white">Home</a>
-      <a className="mr-5 hover:text-white">Menu</a>
-      <a className="mr-5 hover:text-white">Blog</a>
-      <a className="mr-5 hover:text-white">Pages</a>
-      <a className="mr-5 hover:text-white">About</a>
-      <a className="mr-5 hover:text-white">Shop</a>
-      <a className="mr-5 hover:text-white">Contact</a>
-    </nav>
-    <div className="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-5">
-      <search className='text-xs border rounded-full pl-3 pr-36 py-1'>Search...
-        <span className="inline-block mr-3 ml-200">
-        <Image src={searchIcon} alt='search'width={13} className=''/>
-        </span></search>
-    </div>
-  </div>
-</header>
-
+        <a className="mx-auto pt-5 flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-gray-900 lg:items-center lg:justify-center mb-4 md:mb-0">
+          <Image src={logo} alt='Foodtuck' width={90} />
+        </a>
+        <div className="container mx-auto flex flex-wrap flex-col md:flex-row items-start">
+          <nav className="flex lg:w-2/5 flex-wrap p-1 items-start text-sm md-20 ml-40">
+            {navItems.map((item, index) => (
+              <a key={index} className="mr-5 hover:text-white">{item}</a>
+            ))}
+          </nav>
+          <div className="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-5">
+            <div className='text-xs border rounded-full pl-3 pr-36 py-1 flex items-center'>
+              <input type="text" placeholder="Search..." className="bg-transparent outline-none" />
+              <span className="inline-block ml-3">
+                <Image src={searchIcon} alt='search' width={13} />
+              </span>
+            </div>
+          </div>
+        </div>
+      </header>
     </div>
   )
 }
