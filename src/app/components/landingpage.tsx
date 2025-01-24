@@ -11,7 +11,7 @@ import Image from 'next/image'
 const LandingImage = () => {
   return (
     <div>
-      <div className='mx-20 ml-30 flex flex-wrap'>
+      <div className='mx-20 ml-8 flex flex-wrap'>
           <Image src={Sideline} alt='social media platforms' className='ml-4 mt-8'/>
           <div className='flex-auto ml-8 my-auto'>
           <h4 className='text-3xl flex font-GreatVibes  text-[#FF9F0D]'>It's Quick & amusing!</h4>
@@ -23,10 +23,10 @@ const LandingImage = () => {
           <Image src={MainImage} alt='Main Image' width={800} className='ms-auto mt-8'/>
       </div>
    
-      //part2 of landing page
+      {/* part2 of landing page */}
 
       <div className='my-40 mx-20 flex'>
-        <div className='text-white mx-20 ml-50 text-left'>
+        <div className='text-white mx-20 ml-12 text-left'>
           <h4 className='text-3xl font-GreatVibes  text-[#FF9F0D]'>About us</h4>
           <h3 className='text-5xl my-3 font-Helvetica font-bold'><span className='text-[#FF9F0D]'>We </span>Create the best <br />foody product</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque diam pellentesque bibendum non dui volutpat fringilla bibendum. Urna, elit augue urna, vitae feugiat pretium donec id elementum. Ultrices mattis sed vitae mus risus. Lacus nisi, et ac dapibus sit eu velit in consequat.</p>
@@ -49,7 +49,7 @@ const LandingImage = () => {
       </div>
     </div>
     
-    //part 3 of landing page (food category)
+    {/* part 3 of landing page (food category) */}
     
       <div className='mt-0 place-items-center text-center'>
         <div className='text-white'>
@@ -60,7 +60,7 @@ const LandingImage = () => {
           <Image src={foodItems} alt='food items' width={1200}/>
       </div>
 
-      // statistics of website and services
+      {/* statistics of website and services */}
 
       <div className='relative mt-40 '>
         <Image src={OpacityImage} alt='' width={1200} className='absolute opacity-20'/>
