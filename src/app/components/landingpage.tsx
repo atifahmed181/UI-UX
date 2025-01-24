@@ -7,7 +7,6 @@ import food3 from '../../../public/assets/3.png'
 import foodItems from '../../../public/assets/food items.png'
 import IconBox from '../../../public/assets/Icon Box.png'
 import OpacityImage from '../../../public/assets/opacImage.png'
-import checkmark from '../../../public/assets/check-mark.svg'
 import Image from 'next/image'
 const LandingImage = () => {
   return (
