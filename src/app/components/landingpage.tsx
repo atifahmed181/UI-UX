@@ -14,7 +14,7 @@ const LandingImage = () => {
       <div className='mx-20 ml-8 flex flex-wrap'>
           <Image src={Sideline} alt='social media platforms' className='ml-4 mt-8'/>
           <div className='flex-auto ml-8 my-auto'>
-          <h4 className='text-3xl flex font-GreatVibes text-[#FF9F0D]'>It's Quick & amusing!</h4>
+          <h4 className='text-3xl flex font-GreatVibes text-[#FF9F0D]'>It&apos;s Quick & amusing!</h4>
           <h1 className='text-white font-Helvetica text-5xl font-bold mt-4 mb-9'><span className='text-[#FF9F0D]'>Th</span>e Art of speed <br />food Quality</h1>
           <p className='text-white'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br />
           Varius sed pharetra dictum neque massa congue</p>
