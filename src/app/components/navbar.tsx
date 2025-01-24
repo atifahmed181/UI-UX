@@ -9,11 +9,11 @@ const Navbar = () => {
   return (
     <div>
       <header className="text-gray-300 body-font">
-        <a className="mx-auto pt-5 flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-gray-900 lg:items-center lg:justify-center mb-4 md:mb-0">
-          <Image src={logo} alt='Foodtuck' width={90} />
-        </a>
-        <div className="container mx-auto flex flex-wrap flex-col md:flex-row items-start">
-          <nav className="flex lg:w-2/5 flex-wrap p-1 items-start text-sm md-20 ml-40">
+        <div className="container mx-auto flex flex-wrap flex-col md:flex-row items-center">
+          <a href="/" className="mx-auto pt-5 flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-gray-900 lg:items-center lg:justify-center mb-4 md:mb-0">
+            <Image src={logo} alt='Foodtuck' width={90} />
+          </a>
+          <nav className="flex lg:w-2/5 flex-wrap p-1 items-center text-sm md-20 ml-40">
             {navItems.map((item, index) => (
               <a key={index} className="mr-5 hover:text-white">{item}</a>
             ))}
