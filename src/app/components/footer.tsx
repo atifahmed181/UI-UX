@@ -1,6 +1,6 @@
 const Footer = () => {
     return (
-        <div className="absolute bottom-0 items-center w-full">
+        <div className="absolute bottom-auto items-center w-full">
             <div className="flex justify-center text-white">
                 <div className="order-first font-Helvetica">
                     <h1 className="text-2xl font-bold"><span className="text-[#FF9F0D]">St</span>ill You Need Our Support ?</h1>
